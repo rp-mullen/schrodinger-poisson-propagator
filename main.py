@@ -38,19 +38,14 @@ class Wavefunction:
         self.G = 40
 
         self.dt = 0.5
-        self.tEnd = 0.3
-
-        self.Nt = int(np.ceil(self.tEnd/self.dt))
-
-
+        self.t = 0
+        
         self.Vhat = -np.fft.fftn(4.0*np.pi*self.G*(np.abs(self.psi)**2-1.0)) / (self.kSq + (self.kSq==0))
         self.V = np.real(np.fft.ifftn(self.Vhat))
 
-        self.t = 0
-
+      
     def evolve(self):
-        #for i in range(self.Nt):
-        
+    
         # 1/2 step in xy-space
         self.psi = np.exp(-1.j*self.dt/2.0*self.V) * self.psi
 
