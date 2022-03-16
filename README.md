@@ -5,6 +5,7 @@ Half-steps in xy-space occur between full shifts in k-space in order to propagat
 
 
 ### Usage:
+Place the image file in the same directory as the script and run the following command:
 ```
 python main.py <filename>
 ```
