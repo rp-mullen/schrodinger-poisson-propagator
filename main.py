@@ -1,13 +1,13 @@
 # packages
+import sys
 import numpy as np
 from matplotlib import pyplot as plt, animation
 from PIL import Image
 from sklearn.preprocessing import normalize
 
 # load image data
-image_name = "chimp.jpg"
+image_name = sys.argv[0]
 image = Image.open(image_name)
-size = image.size
 
 img_array = np.flipud(np.array(image)[:,:,0])
 img_array = normalize(img_array,axis=1,norm='l1')
