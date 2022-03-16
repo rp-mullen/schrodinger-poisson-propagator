@@ -2,6 +2,7 @@
 import numpy as np
 from matplotlib import pyplot as plt, animation
 from PIL import Image
+from sklearn.preprocessing import normalize
 
 # load image data
 image_name = "chimp.jpg"
