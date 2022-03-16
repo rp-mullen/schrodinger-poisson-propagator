@@ -3,11 +3,10 @@ import numpy as np
 from matplotlib import pyplot as plt, animation
 from PIL import Image
 
+# load image data
 image_name = "chimp.jpg"
 image = Image.open(image_name)
 size = image.size
-image.transform(size, Image.EXTENT, (0,0,size[0]//30, size[1]//30))
-#image = image.transform(orig_size, Image.EXTENT, (0,0, image.size[0]//10, image.size[1]//10))
 
 img_array = np.flipud(np.array(image)[:,:,0])
 img_array = normalize(img_array,axis=1,norm='l1')
@@ -50,21 +49,23 @@ class Wavefunction:
 
     def evolve(self):
         #for i in range(self.Nt):
-        # 1/2 kick
+        
+        # 1/2 step in xy-space
         self.psi = np.exp(-1.j*self.dt/2.0*self.V) * self.psi
 
-        #drift
+        #full-step in k-space
         self.psihat = np.fft.fftn(self.psi)
         self.psihat = np.exp(self.dt * (-1.j*self.kSq/2.)) * self.psihat
         self.psi = np.fft.ifftn(self.psihat)
 
+        # update potential
         self.Vhat = -np.fft.fftn(4.0*np.pi*self.G*(np.abs(self.psi)**2-1.0)) / (self.kSq + (self.kSq==0))
         self.V = np.real(np.fft.ifftn(self.Vhat))
 
-            # 1/2 kick
+        # 1/2 step in xy-space
         self.psi = np.exp(-1.j*self.dt/2.0*self.V) * self.psi
 
-            # update time
+        # update time
         self.t += self.dt
 
     def rho(self):
@@ -72,6 +73,7 @@ class Wavefunction:
 
 psi = Wavefunction(psi0)
 
+# plotting
 fig, ax = plt.subplots()
 psi_ax = plt.pcolormesh(psi.rho(), cmap='jet')
 
@@ -81,4 +83,4 @@ def animate(i):
     psi.evolve()
 
 anim = animation.FuncAnimation(fig, animate, interval = 50, frames = 250)
-anim.save("main2_test.mp4")
+anim.save("main.mp4")
