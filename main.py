@@ -71,11 +71,12 @@ psi = Wavefunction(psi0)
 
 # plotting
 fig, ax = plt.subplots()
-psi_ax = plt.pcolormesh(psi.rho(), cmap='jet')
+psi_ax = plt.pcolormesh(psi.rho(), cmap='inferno')
 
 
 def animate(i):
     psi_ax.set_array(psi.rho())
+    plt.title(r"$\rho = |\psi|^{2}$")
     psi.evolve()
 
 anim = animation.FuncAnimation(fig, animate, interval = 50, frames = 250)
