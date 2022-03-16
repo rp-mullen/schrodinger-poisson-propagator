@@ -3,8 +3,10 @@
 
 Half-steps in xy-space occur between full shifts in k-space in order to propagate the wavefunction through one full time step with minimal numerical error. Transformations between the spatial and momentum bases are facillitated by an FFT/iFFT of the wave function data.
 
+
+### Usage:
 ```
-python main.py
+python main.py <filename>
 ```
 
 ### Example Output:
