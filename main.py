@@ -6,7 +6,7 @@ from PIL import Image
 from sklearn.preprocessing import normalize
 
 # load image data
-image_name = sys.argv[0]
+image_name = sys.argv[1]
 image = Image.open(image_name)
 
 img_array = np.flipud(np.array(image)[:,:,0])
