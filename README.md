@@ -3,7 +3,7 @@
 
 Further Reading: [Schrödinger–Poisson Equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%E2%80%93Newton_equation#:~:text=The%20Schr%C3%B6dinger%E2%80%93Newton%20equation%2C%20sometimes,function%20as%20a%20mass%20density%2C)
 
-Half-steps in xy-space occur between full shifts in k-space in order to propagate the wavefunction through one full time step with minimal numerical error. Transformations between the spatial and momentum bases are facillitated by an FFT/iFFT of the wave function data. The probability density is plotted and saved as an animation.
+Half-steps in xy-space occur in a leapfrog fashion between full shifts in k-space in order to propagate the wavefunction through one full time step with minimal numerical error. Transformations between the spatial and momentum bases are facillitated by an FFT/iFFT of the wave function data. The probability density is plotted and saved as an animation.
 
 
 ## Usage
