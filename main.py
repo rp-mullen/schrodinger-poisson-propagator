@@ -8,8 +8,17 @@ from sklearn.preprocessing import normalize
 # load image data
 image_name = sys.argv[1]
 image = Image.open(image_name)
-
 img_array = np.flipud(np.array(image)[:,:,0])
+
+img_x = len(img_array[:,0])
+img_y = len(img_array[0,:])
+
+# reformat non-square images
+if img_x < img_y:
+    img_array = img_array[:,:img_x]
+else:
+    img_array = img_array[:img_y,:]
+
 img_array = normalize(img_array,axis=1,norm='l1')
 
 psi0 = img_array
