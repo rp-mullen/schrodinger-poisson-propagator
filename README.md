@@ -6,9 +6,9 @@ Further Reading: [Schrödinger–Poisson Equation](https://en.wikipedia.org/wiki
 Half-steps in xy-space occur in a leapfrog fashion between full shifts in k-space in order to propagate the wavefunction through one full time step with minimal numerical error. Transformations between the spatial and momentum bases are facillitated by an FFT/iFFT of the wave function data. The probability density is plotted and saved as an animation.
 
 ## Dependencies
--numpy
--scikit-learn
--Pillow
+- numpy
+- scikit-learn
+- Pillow
 
 ## Usage
 Place the image file in the same directory as the script and run the following command:
