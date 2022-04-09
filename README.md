@@ -21,7 +21,7 @@ python square_well.py <filename>
 ```
 
 ### Example Output (Schrodinger-Poisson)
-The probability density coalesces around the regions of high amplitude, while fringe components propagate outward. This system is, expectedly, far more dynamic than the typical square-well system.
+The probability density quickly coalesces around the regions of high amplitude due to the system's self-gravitation, while fringe components propagate outward. This system is, expectedly, far more dynamic than the typical square-well system.
 <p align="center">
   <img src="https://github.com/rp-mullen/quantum-image-evolver/blob/main/output.gif"/>
 </p>
