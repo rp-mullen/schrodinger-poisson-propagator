@@ -3,7 +3,7 @@
 
 Further Reading: [Schrödinger–Poisson Equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%E2%80%93Newton_equation#:~:text=The%20Schr%C3%B6dinger%E2%80%93Newton%20equation%2C%20sometimes,function%20as%20a%20mass%20density%2C)
 
-THe main evolution algorithm uses Leapfrog Integration, a common technique for numerically solving second order differential equations. With this technique, evolutions occur in half-steps which are intermittently traded between the spatial and momentum representations of the wave function, in order to ensure that energy is conserved and the trajectory is calculated with limited numerical error. Transformations between representations are accomplished by an FFT/iFFT of the image/wavefunction data. After the calculations are completed for the specified number of time steps, the probability density's evolution is plotted and saved as an animation.
+The main algorithm uses Leapfrog Integration, a common technique for numerically solving second order differential equations. With this technique, evolutions occur in half-steps which are intermittently traded between the spatial and momentum representations of the wave function, in order to ensure that energy is conserved and the trajectory is calculated with limited numerical error. Transformations between representations are accomplished by an FFT/iFFT of the image/wavefunction data. After the calculations are completed for the specified number of time steps, the probability density's evolution is plotted and saved as an animation.
 
 This repo also contains the ``square_well.py`` script, which allows the user to see what the image data looks like when evolved with the regular schrodinger equation in a zero-potential system devoid of any self-interaction terms. 
 
