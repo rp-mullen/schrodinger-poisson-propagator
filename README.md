@@ -23,12 +23,13 @@ python square_well.py <filename>
 ```
 
 ### Example Output (Schrodinger-Poisson)
+The probability density coalesces around the regions of high amplitude, while fringe components propagate outward.
 <p align="center">
   <img src="https://github.com/rp-mullen/quantum-image-evolver/blob/main/output.gif"/>
 </p>
 
-### Example Output (Sq. Well)
-
+### Example Output (Square Well)
+Outward dispersion of clustered amplitudes and overlapping interference of the evolving probability density is the defining feature of the gravitation-less square well system.
 <p align="center">
   <img src="https://github.com/rp-mullen/schrodinger-poisson-evolver/blob/main/square_well_output.gif"/>
 </p>
