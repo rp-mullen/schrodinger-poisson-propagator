@@ -8,9 +8,9 @@ The main algorithm uses Leapfrog Integration, a common technique for numerically
 This repo also contains the ``square_well.py`` script, which allows the user to see what the image data looks like when evolved with the regular schrodinger equation in a zero-potential system devoid of any self-interaction terms. 
 
 ## Dependencies
-- numpy
-- scikit-learn
-- Pillow
+- numpy-1.22.3
+- scikit-learn-1.0.2
+- PIL-9.0.1
 
 ## Usage
 Place the image file in the same directory as the ``main.py`` script and run the following command:
