@@ -5,6 +5,8 @@ Further Reading: [Schrödinger–Poisson Equation](https://en.wikipedia.org/wiki
 
 Half-steps in xy-space occur in a leapfrog fashion between full shifts in k-space in order to propagate the wavefunction through one full time step with minimal numerical error. Transformations between the spatial and momentum bases are facillitated by an FFT/iFFT of the wave function data. The probability density is plotted and saved as an animation.
 
+This repo also contains the ``square_well.py`` script, which allows the user to see what the image data looks like when evolved with the regular schrodinger equation in a zero-potential system devoid of any self-interaction terms. 
+
 ## Dependencies
 - numpy
 - scikit-learn
