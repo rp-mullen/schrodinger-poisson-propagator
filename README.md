@@ -11,9 +11,13 @@ Half-steps in xy-space occur in a leapfrog fashion between full shifts in k-spac
 - Pillow
 
 ## Usage
-Place the image file in the same directory as the script and run the following command:
+Place the image file in the same directory as the ``main.py`` script and run the following command:
 ```
 python main.py <filename>
+```
+To produce the output of a "normal" square-well potential without the self interaction term, i.e. the solution to the canonical schrodinger equation, run:
+```
+python square_well.py <filename>
 ```
 
 ### Example Output:
