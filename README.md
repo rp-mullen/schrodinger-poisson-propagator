@@ -22,8 +22,13 @@ To produce the output of a "normal" square-well potential without the self inter
 python square_well.py <filename>
 ```
 
-### Example Output:
+### Example Output (Schrodinger-Poisson)
 <p align="center">
   <img src="https://github.com/rp-mullen/quantum-image-evolver/blob/main/output.gif"/>
 </p>
 
+### Example Output (Sq. Well)
+
+<p align="center">
+  <img src="https://github.com/rp-mullen/schrodinger-poisson-evolver/blob/main/square_well_output.gif"/>
+</p>
