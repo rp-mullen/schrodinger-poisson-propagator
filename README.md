@@ -27,7 +27,7 @@ The probability density quickly coalesces around the regions of high amplitude d
 </p>
 
 ### Example Output (Square Well)
-Slow dispersion of clustered amplitudes and overlapping interference of the evolving probability density is the defining feature of the gravitation-less square well system.
+Slow dispersion of clustered amplitudes and overlapping interference of the evolving probability density are the defining features of the gravitation-less square well system.
 <p align="center">
   <img src="https://github.com/rp-mullen/schrodinger-poisson-evolver/blob/main/square_well_output.gif"/>
 </p>
