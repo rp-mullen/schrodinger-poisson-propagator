@@ -9,6 +9,7 @@ The main script also runs with the ``-sq`` parameter, which allows the user to s
 - numpy-1.22.3
 - scikit-learn-1.0.2
 - PIL-9.0.1
+- matplotlib-3.5.1
 
 ## Usage
 Place the image file in the same directory as the ``main.py`` script and run the following command:
